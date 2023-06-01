@@ -10,25 +10,36 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for taking the time to fill out our survey</p>
 
-    <form id="survey-form">
+    <form method="post" id="survey-form">
+      <fieldset>
         <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"></label>
         <label id="email-label">Email<input id="email" type="email" required placeholder="Insert your email"></label>
-        <label id="number-label">Age<input id="number" type="number" placeholder="Enter your age" min="18"
+        <label id="number-label">Age (years)<input id="number" type="number" placeholder="Enter your age" min="18"
                 max="102"></label>
+    </fieldset>
+
+    <fieldset>
+       
+        <p id="personality-type">Please select your personality type:</p>
         <select id="dropdown">
             <option value="" name="filler-text">(select one) </option>
             <option value="1" name="Introvert">Introvert</option>
             <option value="2" name="Extrovert">Extrovert</option>
         </select>
 
+        <fieldset>
+        <p>Where do you usually make friends?</p>
 
-        <input type="radio" name="radio-button" value="For me">
-        <input type="radio" name="radio-button" value="For a friend">
-        <input type="radio" name="radio-button" value="For a family member">
-
+        <label for="work"><input id="work" class="inline" type="radio" name="radio-button"> At work</label>
+        <label for="social"><input id="social" class="inline" type="radio" name="radio-button">In social gatherings</label>
+        <label for="friends"><input id="friends" class="inline" type="radio" name="radio-button">Through friends</label>
+       </fieldset>
+       
         <textarea></textarea>
-        <input id="submit" type="submit">
 
+    </fieldset>
+
+    <fieldset>
         <p>What character traits do you believe you have (Check all that apply)</p>
         <label>
             <input value="trait1" type="checkbox">
@@ -58,6 +69,10 @@
             <input value="trait7" type="checkbox">
             Fun
         </label>
+    </fieldset>
+
+        <input id="submit" type="submit">
+
     </form>
 </body>
 
