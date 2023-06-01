@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out our survey</p>
+
+    <form id="survey-form">
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email<input id="email" type="email" required placeholder="Insert your email"></label>
+        <label id="number-label">Age<input id="number" type="number" placeholder="Enter your age" min="18"
+                max="102"></label>
+        <select id="dropdown">
+            <option value="" name="filler-text">(select one) </option>
+            <option value="1" name="Introvert">Introvert</option>
+            <option value="2" name="Extrovert">Extrovert</option>
+        </select>
+
+
+        <input type="radio" name="radio-button" value="For me">
+        <input type="radio" name="radio-button" value="For a friend">
+        <input type="radio" name="radio-button" value="For a family member">
+
+        <textarea></textarea>
+        <input id="submit" type="submit">
+
+        <p>What character traits do you believe you have (Check all that apply)</p>
+        <label>
+            <input value="trait1" type="checkbox">
+            Empathy
+        </label>
+        <label>
+            <input value="trait2" type="checkbox">
+            Honesty
+        </label>
+        <label>
+            <input value="trait3" type="checkbox">
+            Integrity
+        </label>
+        <label>
+            <input value="trait4" type="checkbox">
+            Courage
+        </label>
+        <label>
+            <input value="trait5" type="checkbox">
+            Determined
+        </label>
+        <label>
+            <input value="trait6" type="checkbox">
+            Devoted
+        </label>
+        <label>
+            <input value="trait7" type="checkbox">
+            Fun
+        </label>
+    </form>
+</body>
+
+</html>
